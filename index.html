@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+    <title>Менеджер паролей</title>
+</head>
+<body>
+    <h2>Менеджер паролей</h2>
+    <form id="password-form">
+        <input type="text" id="url" placeholder="URL" required>
+        <input type="text" id="login" placeholder="Логин" required>
+        <input type="password" id="password" placeholder="Пароль" required>
+        <button type="button" id="generate-password">Сгенерировать пароль</button>
+        <button type="submit" id="add-password">Добавить</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>URL</th>
+                <th>Логин</th>
+                <th>Пароль</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="password-list">
+        </tbody>
+    </table>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
