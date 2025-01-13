@@ -32,6 +32,9 @@
 
 Демонстрация приложения:
 
-![Alt text](demonstration1.png)
-![Alt text](demonstration2.png)
-![Alt text](demonstration3.png)
+<img src="demonstration1.png" width="80%" height="auto">
+<p float="left">
+  <img src="demonstration2.png" width="40%" height="auto"> 
+  <img src="demonstration3.png" width="40%" height="auto">
+</p>
+
